@@ -33,7 +33,7 @@ function MintForm() {
     setIsLoading(true);
     try {
       const response = await fetch(
-        "http://34.131.55.151:5223/api/mintCertificate",
+        "http://localhost:5223/api/mintCertificate",
         {
           method: "POST",
           headers: {
@@ -95,10 +95,10 @@ function MintForm() {
         <p><strong>{formData.name}</strong></p>
         <p>has successfully completed the course</p>
         <p><strong>{formData.course}</strong></p>
-        <p>on {new Date(formData.date * 1000).toLocaleDateString()}</p>
+        <p>on {formData.date}</p>
         <p>Issued by: {formData.issuer}</p>
         <div className="certificate-seal"></div>
-      <button onClick={() => window.open(`http://34.131.55.151:5223/api/verifyCertificate/${tokenId}`, '_blank')}>Click Here to Verify</button>
+      <button onClick={() => window.open(`http://localhost:5223/api/verifyCertificate/${tokenId}`, '_blank')}>Click Here to Verify</button>
       </div>
       <button onClick={downloadPDF}>Download as PDF</button>
     </>
