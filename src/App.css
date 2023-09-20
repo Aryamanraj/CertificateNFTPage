@@ -1,9 +1,14 @@
+@font-face{
+	font-family: retro;
+	src: url(components/visitor1.ttf);
+font-weight: normal;	
+}
 body {
   background-color: #121212; /* Dark background for the whole page */
 }
 
 .App {
-  font-family: 'Arial', sans-serif;
+  font-family: 'retro', sans-serif;
   text-align: center;
   padding: 20px;
   color: #a0a0a0; /* Light gray text */
@@ -25,7 +30,7 @@ body {
   padding: 20px;
   margin: 40px auto;
   max-width: 600px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'retro', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center horizontally */
@@ -77,6 +82,7 @@ button {
   transition: background-color 0.3s ease;
   box-shadow: 0 0 20px rgba(13, 255, 239, 0.5); /* Neon blue glow */
   margin-top: 20px; /* Space above the button */
+  font-family: retro;
 }
 
 button:hover {
@@ -118,7 +124,7 @@ button:hover {
   border: 2px solid #0df; /* Neon blue border */
   border-radius: 15px;
   background-color: rgba(28, 28, 28, 0.9); /* Semi-transparent dark gray */
-  font-family: 'Times New Roman', serif; /* Classic font for certificates */
+  font-family: 'retro', serif; /* Classic font for certificates */
   text-align: center;
   color: #a0a0a0; /* Light gray text */
 }
